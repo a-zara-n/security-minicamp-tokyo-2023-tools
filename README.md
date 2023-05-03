@@ -19,6 +19,10 @@ Dockerfileがあるディレクトリで以下のコマンドを実行してく�
 ```sh
 make build
 ```
+または、下記のコマンドを実行し、Docker Imageをビルドしてください。
+```sh
+docker build --no-cache -t security-mini-camp-toolbox .
+```
 
 その後、以下のコマンドでDocker Imageが作成されていることを確認してください。
 ```sh
@@ -29,4 +33,9 @@ docker images | grep security-mini-camp-toolbox
 以下のコマンドでDocker Imageを実行してください。
 ```sh
 make shell
+```
+
+または、下記のコマンドを実行し、Docker Imageを実行してください。
+```sh
+docker run -v $(PWD)/assets:/tmp/minicamp -it --rm security-mini-camp-toolbox
 ```

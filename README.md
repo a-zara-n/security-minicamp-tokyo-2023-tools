@@ -1,5 +1,13 @@
 # セキュリティミニキャンプ 2023 Tokyo A-1講義向けTool box
 
+
+```sh
+git clone https://github.com/a-zara-n/security-minicamp-tokyo-2023-tools.git
+cd security-minicamp-tokyo-2023-tools
+make build
+make shell
+```
+
 ## SetUp
 ### Dockerのインストール
 はじめに、Docker for MacまたはDocker for Windowsをインストールしてください。
